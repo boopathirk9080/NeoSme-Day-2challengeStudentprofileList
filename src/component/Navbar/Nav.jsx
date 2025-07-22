@@ -35,7 +35,7 @@ export default function Navbar() {
 
   return (
     <>
-      <AppBar position="static" className="bg-white shadow-md">
+      <AppBar position="static" className=" shadow-md z-50 flex  ">
         <Toolbar className="flex justify-between items-center">
           <Typography variant="h6" className="text-black font-bold">
             Class A
@@ -48,7 +48,7 @@ export default function Navbar() {
                 key={link.text}
                 to={link.path}
                 onClick={() => handleLinkClick(link.path)}
-                className={`font-medium transition duration-300 ${activeLink === link.path
+                className={`font-medium transition duration-300 ${ location.pathname === link.path
                   ? 'text-gray-400'
                   : 'text-white hover:text-gray-300'
                   }`}

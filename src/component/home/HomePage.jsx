@@ -7,14 +7,21 @@ function HomePage() {
   const [searchTerm, setSearchTerm] = useState('');
   const [allData, setAllData] = useState([]);
 
-  useEffect(() => {
-    axios.get('http://localhost:3001/personData')
-      .then(res => {
-        setData(res.data);
-        setAllData(res.data);
-      })
-      .catch(console.error);
-  }, []);
+useEffect(() => {
+  axios
+    .get(
+      'https://api.github.com/repos/boopathirk9080/NeoSme-Day-2challengeStudentprofileList/contents/src/data/data.json',
+      { headers: { Accept: 'application/vnd.github.v3.raw' } }  // this tells GitHub to give you the raw file, not metadata
+    )
+    .then(res => {
+      // res.data is already the parsed JSON
+      setData(res.data.personData);
+      setAllData(res.data.personData);
+      console.log('Data fetched from GitHub API')
+    })
+    .catch(console.error);
+}, []);
+
 
   const handleSearch = e => {
     const v = e.target.value;
@@ -45,8 +52,8 @@ function HomePage() {
           <Link
             key={profile.id}
             to={`/details/${encodeURIComponent(profile.name)}`}
-            className="block border p-4 rounded hover:shadow-lg transition "
-          ><div className='grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 ' >
+            className="block border p-4 rounded hover:shadow-lg transition border-none bg-[#178bff81] "
+          ><div className='grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-2   ' >
               <div>
               <img src={profile.img} alt="" />
             </div>

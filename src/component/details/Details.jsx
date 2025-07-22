@@ -27,21 +27,31 @@ function Details() {
     </div>
   );
 
+  // In your Details.jsx (or App.jsx) render:
   return (
-    <div className="p-6 max-w-lg mx-auto border rounded">
-      <h1 className="text-3xl font-bold mb-4">{profile.name}</h1>
-      <p className="mb-2"><strong>Age:</strong> {profile.age}</p>
-      <p className="mb-2"><strong>Email:</strong> {profile.email}</p>
-      <p className="mb-2"><strong>Occupation:</strong> {profile.occupation}</p>
-        <p className="mb-2"><strong>Location:</strong> {profile.location}</p>
-      <Link
-        to="/"
-        className="mt-4 inline-block text-blue-500 underline"
-      >
-        ← Back to profiles
-      </Link>
+    <div className=" h-1/2  bg-gray-100 z-0 grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-2  ">
+      <div>
+        <img src={profile.img} alt="" className='h-[500px]' />
+      </div>
+
+      <div className="p-6 min-h-1/12 max-w-lg w-full rounded bg-[#178bff81]">
+        <h1 className="text-3xl font-bold mb-4">{profile.name}</h1>
+        <p className="mb-2"><strong>Age:</strong> {profile.age}</p>
+        <p className="mb-2"><strong>Email:</strong> {profile.email}</p>
+        <p className="mb-2"><strong>Occupation:</strong> {profile.occupation}</p>
+        <p className="mb-2"><strong>Location:</strong>{profile.location}</p>
+                <p className="mb-2"><strong>Hobby:</strong> <li>{profile.hobbies[0]} <br /></li> <li>{profile.hobbies[1] } <br /></li>{profile.hobbies[2]&& <li>{profile.hobbies[2] } <br /></li> }</p>
+                
+        <p className="mb-2"><strong>{profile.emergencyContact.name}:</strong> {profile.emergencyContact.phone}</p>
+
+        <p className="mb-2"><strong>Description:</strong> {profile.description}</p>
+        <Link to="/" className="mt-4 inline-block text-blue-500 underline">
+          ← Back to profiles
+        </Link>
+      </div>
     </div>
   );
+
 }
 
 export default Details;
