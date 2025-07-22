@@ -37,8 +37,9 @@ export default function Navbar() {
     <>
       <AppBar position="static" className=" shadow-md z-50 flex  ">
         <Toolbar className="flex justify-between items-center">
-          <Typography variant="h6" className="text-black font-bold">
-            Class A
+          <Typography variant="h6" className="text-white font-bold">
+          <b>Employe Admin
+            </b>  
           </Typography>
 
           {/* Desktop links - Fixed Web View */}
