@@ -8,13 +8,14 @@ function Details() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get('http://localhost:3001/personData')
-      .then(res => {
-        const found = res.data.find(
-          p => p.name.toLowerCase() === decodeURIComponent(name).toLowerCase()
-        );
-        setProfile(found || null);
-      })
+    axios.get(
+      'https://api.github.com/repos/boopathirk9080/NeoSme-Day-2challengeStudentprofileList/contents/src/data/data.json',
+      { headers: { Accept: 'application/vnd.github.v3.raw' } }  // this tells GitHub to give you the raw file, not metadata
+    ).then(res => {
+      const data = res.data.personData; 
+      const foundProfile = data.find(p => p.name === decodeURIComponent(name));
+      setProfile(foundProfile);
+    })
       .catch(console.error)
       .finally(() => setLoading(false));
   }, [name]);
@@ -40,9 +41,11 @@ function Details() {
         <p className="mb-2"><strong>Email:</strong> {profile.email}</p>
         <p className="mb-2"><strong>Occupation:</strong> {profile.occupation}</p>
         <p className="mb-2"><strong>Location:</strong>{profile.location}</p>
-                <p className="mb-2"><strong>Hobby:</strong> <li>{profile.hobbies[0]} <br /></li> <li>{profile.hobbies[1] } <br /></li>{profile.hobbies[2]&& <li>{profile.hobbies[2] } <br /></li> }</p>
-                
+        <p className="mb-2"><strong>Hobby:</strong> <li>{profile.hobbies[0]} <br /></li> <li>{profile.hobbies[1]} <br /></li>{profile.hobbies[2] && <li>{profile.hobbies[2]} <br /></li>}</p>
+
+        <p className="mb-2"><strong>Phone:</strong> {profile.phone}</p>
         <p className="mb-2"><strong>{profile.emergencyContact.name}:</strong> {profile.emergencyContact.phone}</p>
+        <p className="mb-2"><strong>Address:</strong> {profile.address}</p>
 
         <p className="mb-2"><strong>Description:</strong> {profile.description}</p>
         <Link to="/" className="mt-4 inline-block text-blue-500 underline">
