@@ -3,16 +3,16 @@
     {
       "name": "Boopathi",
       "age": 23,
-      "location": "Chennai",
+      "location": "Salem",
       "occupation": "Software Engineer",
       "hobbies": ["coding", "reading", "gaming"],
       "description": "A passionate software engineer with a love for coding and technology.",
       "img":"https://img.freepik.com/free-photo/3d-rendering-cartoon-like-boy-ready-adventure_23-2150797558.jpg?t=st=1753157066~exp=1753160666~hmac=885727c31b5a5fa72e5ca5d26c7d165fd426f82e62ce4e256fedd59d19954728&w=1380",
       "email": "boopathi@gmail.com",
       "phone": "+91 9080787009",
-      "address": "123 Main St, Chennai, India",
+      "address": "123 Main St, Salem, India",
       "emergencyContact": {
-        "name": "Boopathi Emergency",
+        "name": "Boopathi Mom",
         "phone": "+91 123 456 7890"
       },
       "id": 1
@@ -29,7 +29,7 @@
       "phone": "+1 234 567 8901",
       "address": "456 Elm St, New York, USA",
       "emergencyContact": {
-        "name": "Alice Emergency",
+        "name": "Alice Brother",
         "phone": "+1 987 654 3210"
       },
       "id": 2
@@ -46,7 +46,7 @@
       "phone": "+1 345 678 9012",
       "address": "789 Oak St, San Francisco, USA",
       "emergencyContact": {
-        "name": "John Emergency",
+        "name": "John Sister",
         "phone": "+1 123 456 7890"
       },  
       "id": 3 
@@ -63,7 +63,7 @@
       "phone": "+44 1234 567890",
       "address": "101 Pine St, London, UK",
       "emergencyContact": {
-        "name": "Tito Emergency",
+        "name": "Tito Dad",
         "phone": "+44 1234 567890"
       },
       "id": 4
