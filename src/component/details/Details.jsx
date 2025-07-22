@@ -3,22 +3,24 @@ import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 
 function Details() {
-  const { name } = useParams();
+  const { id } = useParams();
   const [profile, setProfile] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    const profileId=parseInt(id, 10);
     axios.get(
       'https://api.github.com/repos/boopathirk9080/NeoSme-Day-2challengeStudentprofileList/contents/src/data/data.json',
-      { headers: { Accept: 'application/vnd.github.v3.raw' } }  // this tells GitHub to give you the raw file, not metadata
+      { headers: { Accept: 'application/vnd.github.v3.raw' } }  
     ).then(res => {
       const data = res.data.personData; 
-      const foundProfile = data.find(p => p.name === decodeURIComponent(name));
+      const foundProfile = data.find(p => p.id === profileId);
+      console.log('Profile fetched:', foundProfile);
       setProfile(foundProfile);
     })
       .catch(console.error)
       .finally(() => setLoading(false));
-  }, [name]);
+  }, [id]);
 
   if (loading) return <p>Loading…</p>;
   if (!profile) return (

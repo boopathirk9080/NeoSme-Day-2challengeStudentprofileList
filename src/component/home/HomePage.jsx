@@ -51,7 +51,7 @@ useEffect(() => {
         {data.map(profile => (
           <Link
             key={profile.id}
-            to={`/details/${encodeURIComponent(profile.name)}`}
+            to={`/details/${encodeURIComponent(profile.id)}`}
             className="block border p-4 rounded hover:shadow-lg transition border-none bg-[#178bff81] "
           ><div className='grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-2   ' >
               <div>

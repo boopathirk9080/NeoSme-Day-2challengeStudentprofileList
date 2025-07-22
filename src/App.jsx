@@ -11,7 +11,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         {/* dynamic “name” param */}
-        <Route path="/details/:name" element={<Details />} />
+        <Route path="/details/:id" element={<Details />} />
         <Route path="/generate" element={<Generate />} />
       </Routes>
     </BrowserRouter>
