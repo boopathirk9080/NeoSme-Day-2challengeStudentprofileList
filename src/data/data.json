@@ -1,0 +1,48 @@
+{
+  "personData": [
+    {
+      "name": "Boopathi",
+      "age": 23,
+      "location": "Chennai",
+      "occupation": "Software Engineer",
+      "hobbies": ["coding", "reading", "gaming"],
+      "description": "A passionate software engineer with a love for coding and technology.",
+      "img":"https://img.freepik.com/free-photo/3d-rendering-cartoon-like-boy-ready-adventure_23-2150797558.jpg?t=st=1753157066~exp=1753160666~hmac=885727c31b5a5fa72e5ca5d26c7d165fd426f82e62ce4e256fedd59d19954728&w=1380",
+      "email": "boopathi@gmail.com",
+      "id": 1
+    },
+    {
+      "name": "Alice",
+      "age": 28,
+      "location": "New York",
+      "occupation": "Data Scientist",
+      "hobbies": ["hiking", "photograph,y"],
+      "description": "A data scientist who enjoys exploring data and finding insights.",
+      "img":"https://img.freepik.com/free-photo/close-up-man-cartoon-character-smiling_23-2150964469.jpg?t=st=1753157128~exp=1753160728~hmac=13cd66b856224498d81596f34d2216f2bf8dcb41c90229b16ffb729359e8a6a1&w=740",
+      "email": "alice@gmail.com",
+      "id": 2
+    },
+    {
+      "name": "John",
+      "age": 35,
+      "location": "San Francisco",
+      "occupation": "Product Manager",
+      "hobbies": ["traveling", "cooking"],
+      "description": "A product manager with a knack for understanding user needs and delivering solutions.",
+      "img":"https://img.freepik.com/free-photo/close-up-elder-cartoon-character-portrait_23-2150964399.jpg?t=st=1753157128~exp=1753160728~hmac=662a7a3ab84ebb94d9ae030180d0786bf73769b5fb9392812237d1309984d7f1",
+      "email": "john@gmail.com",
+      "id": 3 
+    },
+    {
+      "name": "Tito",
+      "age": 26,
+      "location": "London",
+      "occupation": "UX Designer",
+      "hobbies": ["designing", "blogging"],
+      "description": "A UX designer who loves creating user-friendly interfaces.",
+      "img":"https://img.freepik.com/free-photo/close-up-cartoon-character-man-with-phone_23-2150964395.jpg?t=st=1753157128~exp=1753160728~hmac=17e6e62b1f88d605cb9121e839e6a9564f620f7e5b5c731a48e7c5650fc94551",
+      "email": "tito@gmail.com",
+      "id": 4
+    }
+    ]
+}
