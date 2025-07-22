@@ -8,7 +8,7 @@ function Details() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const profileId=parseInt(id, 10);
+    const profileId=id;
     axios.get(
       'https://api.github.com/repos/boopathirk9080/NeoSme-Day-2challengeStudentprofileList/contents/src/data/data.json',
       { headers: { Accept: 'application/vnd.github.v3.raw' } }  
