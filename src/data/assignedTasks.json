@@ -1,0 +1,58 @@
+{
+  "signup": [
+    {
+      "id": 1,
+      "name": "Boopathi",
+      "email": "boopathi@gmail.com",
+      "recivedmessage": ""
+    },
+    {
+      "id": 2,
+      "name": "Alice",
+      "email": "alice@gmail.com",
+      "recivedmessage": ""
+    },
+    {
+      "id": 3,
+      "name": "John",
+      "email": "john@gmail.com",
+      "recivedmessage": ""
+    },
+    {
+      "id": 4,
+      "name": "Tito",
+      "email": "tito@gmail.com",
+      "recivedmessage": ""
+    },
+    {
+      "id": 5,
+      "name": "Rafi",
+      "email": "rafi@gmail.com",
+      "recivedmessage": ""
+    },
+    {
+      "id": 6,
+      "name": "Thiyagu",
+      "email": "thiyagu@gmail.com",
+      "recivedmessage": ""
+    },
+    {
+      "id": 7,
+      "name": "George",
+      "email": "george@gmail.com",
+      "recivedmessage": ""
+    },
+    {
+      "id": 8,
+      "name": "Mani",
+      "email": "mani@gmail.com",
+      "recivedmessage": ""
+    },
+    {
+      "id": 9,
+      "name": "Pandi",
+      "email": "pandi@gmail.com",
+      "recivedmessage": ""
+    }
+  ]
+}
