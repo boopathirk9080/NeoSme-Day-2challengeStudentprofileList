@@ -17,6 +17,7 @@
       },
       "id": 1
     },
+    
     {
       "name": "Alice",
       "age": 28,
@@ -50,7 +51,8 @@
         "phone": "+1 123 456 7890"
       },  
       "id": 3 
-    },
+    }
+    ,
     {
       "name": "Tito",
       "age": 26,
@@ -68,5 +70,97 @@
       },
       "id": 4
     }
+    ,
+    {
+      "name": "Rafi",
+      "age": 26,
+      "location": "Salem",
+      "occupation": "UX Designer",
+      "hobbies": ["designing", "blogging"],
+      "description": "A UX designer who loves creating user-friendly interfaces.",
+      "img":"https://img.freepik.com/free-photo/close-up-cartoon-character-man-with-phone_23-2150964395.jpg?t=st=1753157128~exp=1753160728~hmac=17e6e62b1f88d605cb9121e839e6a9564f620f7e5b5c731a48e7c5650fc94551",
+      "email": "tito@gmail.com",
+      "phone": "+44 1234 567890",
+      "address": "101 Pine St, London, UK",
+      "emergencyContact": {
+        "name": "Tito Dad",
+        "phone": "+44 1234 567890"
+      },
+      "id": 5
+    }
+    ,
+    {
+      "name": "Thiyagu",
+      "age": 26,
+      "location": "London",
+      "occupation": "UX Designer",
+      "hobbies": ["designing", "blogging"],
+      "description": "A UX designer who loves creating user-friendly interfaces.",
+      "img":"https://img.freepik.com/free-photo/close-up-cartoon-character-man-with-phone_23-2150964395.jpg?t=st=1753157128~exp=1753160728~hmac=17e6e62b1f88d605cb9121e839e6a9564f620f7e5b5c731a48e7c5650fc94551",
+      "email": "tito@gmail.com",
+      "phone": "+44 1234 567890",
+      "address": "101 Pine St, London, UK",
+      "emergencyContact": {
+        "name": "Tito Dad",
+        "phone": "+44 1234 567890"
+      },
+      "id": 6
+    }
+    ,
+    {
+      "name": "George",
+      "age": 26,
+      "location": "London",
+      "occupation": "UX Designer",
+      "hobbies": ["designing", "blogging"],
+      "description": "A UX designer who loves creating user-friendly interfaces.",
+      "img":"https://img.freepik.com/free-photo/close-up-cartoon-character-man-with-phone_23-2150964395.jpg?t=st=1753157128~exp=1753160728~hmac=17e6e62b1f88d605cb9121e839e6a9564f620f7e5b5c731a48e7c5650fc94551",
+      "email": "tito@gmail.com",
+      "phone": "+44 1234 567890",
+      "address": "101 Pine St, London, UK",
+      "emergencyContact": {
+        "name": "Tito Dad",
+        "phone": "+44 1234 567890"
+      },
+      "id": 7
+    }
+    ,
+    {
+      "name": "Mani",
+      "age": 26,
+      "location": "London",
+      "occupation": "UX Designer",
+      "hobbies": ["designing", "blogging"],
+      "description": "A UX designer who loves creating user-friendly interfaces.",
+      "img":"https://img.freepik.com/free-photo/close-up-cartoon-character-man-with-phone_23-2150964395.jpg?t=st=1753157128~exp=1753160728~hmac=17e6e62b1f88d605cb9121e839e6a9564f620f7e5b5c731a48e7c5650fc94551",
+      "email": "tito@gmail.com",
+      "phone": "+44 1234 567890",
+      "address": "101 Pine St, London, UK",
+      "emergencyContact": {
+        "name": "Tito Dad",
+        "phone": "+44 1234 567890"
+      },
+      "id": 8
+    }
+    ,
+    {
+      "name": "Pandi",
+      "age": 26,
+      "location": "London",
+      "occupation": "UX Designer",
+      "hobbies": ["designing", "blogging"],
+      "description": "A UX designer who loves creating user-friendly interfaces.",
+      "img":"https://img.freepik.com/free-photo/close-up-cartoon-character-man-with-phone_23-2150964395.jpg?t=st=1753157128~exp=1753160728~hmac=17e6e62b1f88d605cb9121e839e6a9564f620f7e5b5c731a48e7c5650fc94551",
+      "email": "tito@gmail.com",
+      "phone": "+44 1234 567890",
+      "address": "101 Pine St, London, UK",
+      "emergencyContact": {
+        "name": "Tito Dad",
+        "phone": "+44 1234 567890"
+      },
+      "id": 9
+    }
+
     ]
+    
 }
